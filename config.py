@@ -16,7 +16,7 @@ class Config(object):
     START_PIC   = os.environ.get("START_PIC", "")
     ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '2008011703 6331067820 5053815620 5769925013 6808832512 1270076250 6693143450 5404195701 6259443940 6551118348').split()]
     # -- FORCE_SUB_CHANNELS = ["BotzPW","AshuSupport","AshutoshGoswami24"] -- # 
-    FORCE_SUB_CHANNELS = os.environ.get('FORCE_SUB_CHANNELS', 'STERN_LEGION, AnimePlaza_STR, CinemaStack_Official').split(',')
+    FORCE_SUB_CHANNELS = os.environ.get('FORCE_SUB_CHANNELS', 'STERN_LEGION,AnimePlaza_STR,CinemaStack_Official').split(',')
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002155891890"))
     PORT = int(os.environ.get("PORT", "8080"))
     
